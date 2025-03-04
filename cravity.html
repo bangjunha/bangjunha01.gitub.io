@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cute+Font&family=Dancing+Script:wght@700&display=swap');
+        </style>
+    <style>
+        .button {
+            background-color: #59b5e6; /* Green */
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            margin-left: 110px;
+            font-size: 16px;
+            cursor: pointer;
+            -webkit-transition-duration: 0.4s; /* Safari */
+            transition-duration: 0.4s;
+        }
+        .button2:hover {
+            box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+        }
+        td{
+            font-family: 'Cute Font', cursive;
+            font-size: 20px;
+        }
+        th:hover img{
+            box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+            width: 150px;
+            height: 150px;
+        }
+        nav{
+            border: 0px solid #cccccc;
+            width: 95%;
+            height: 70px;
+            margin-top: 10px;
+        }
+        nav li{
+            display: inline;
+            margin: 20px;
+            font-family: 'Nanum Brush script';
+            font-size: 30px;
+            text-shadow: 4px 4px 5px rgb(62, 158, 231);
+            font-family: 'Dancing Script', cursive;
+        }
+        ol>li{
+            display: inline;
+            padding-right: 5pt;
+            padding-left: 2pt;           
+        }
+        a:link{
+            text-decoration: none;
+        }
+        a{
+            color: white;
+        }
+    </style>
+        <script>
+            function buttonClick1(){
+                alert('프로필');
+            }
+            function buttonClick2(){
+                alert('앨범');
+            }
+        </script>
+    <script src="jqueryfade.js"></script>
+    <script src="jqueryanimate.js"></script>
+</head>
+<body>
+    <nav>
+    <ol> 
+        <li><button onclick="buttonClick1()" id="button1" class="button button2">크래비티 프로필</button></li>
+        <li><button onclick="buttonClick2()" id="button2" class="button button2">크래비티 앨범</button></li>
+        <li><a href="cravitypoto.html" target="ifr"><button class="button button2">크래비티 사진 & 무대</a></button></li>
+    </ol>
+    </nav>
+    <span id="span1" style="display:none;position:absolute;width:150px; height:150px;">
+        <table border="0">
+            <tr>
+                <th>Break all the Rules</th>
+                <th>Flame</th>
+            </tr>
+            <tr>
+                <th><img src="./images/cramusic1.png" width="150px" height="150px"></th>
+                <th><img src="./images/cramusic2.png" width="150px" height="150px"></th>
+            </tr>
+            <tr>
+                <th>My Turn</th>
+                <th>Gas Pedal</th>
+            </tr>
+            <tr>
+                <th><img src="./images/cramusic3.png" width="150px" height="150px"></th>
+                <th><img src="./images/cramusic4.png" width="150px" height="150px"></th>
+            </tr>
+            <tr>
+                <th>LIBERTY : IN OUR COSMOS (Adrenaline)</th>
+                <th>PARTY ROCK</th>
+            </tr>
+            <tr>
+                <th><img src="./images/cramusic5.png" width="150px" height="150px"></th>
+                <th><img src="./images/cramusic6.png" width="150px" height="150px"></th>
+            </tr>
+        </table>
+    </span>
+    <table border="0">
+        <tr>
+            <th><div id="div1" style="display:none;"><img src="./images/serim.png" width="100px" height="100px"></div></th>
+            <td><div id="div2" style="display:none;">&lt세림&gt<br>출생 : 1999년 03월 03일<br>신체 : 175cm<br>혈액형 : A형</div></td>
+        </tr>
+        <tr>
+            <th><div id="div3" style="display:none;"><img src="./images/allen.png" width="100px" height="100px"></div></th>
+            <td><div id="div4" style="display:none;">&lt앨런&gt<br>출생 : 1999년 04월 26일<br>신체 : 170cm<br>혈액형 : A형</div></td>
+        </tr>
+        <tr>
+            <th><div id="div5" style="display:none;"><img src="./images/jungmo.png" width="100px" height="100px"></div></th>
+            <td><div id="div6" style="display:none;">&lt정모&gt<br>출생 : 2000년 02월 05일<br>신체 : 180cm<br>혈액형 : B형</div></td>
+        </tr>
+        <tr>
+            <th><div id="div7" style="display:none;"><img src="./images/woobin.png" width="100px" height="100px"></div></th>
+            <td><div id="div8" style="display:none;">&lt우빈&gt<br>출생 : 2000년 10월 16일<br>신체 : 175cm<br>혈액형 : B형</div></td>
+        </tr>
+        <tr>
+            <th><div id="div9" style="display:none;"><img src="./images/wonjin.png" width="100px" height="100px"></div></th>
+            <td><div id="div10" style="display:none;">&lt원진&gt<br>출생 : 2001년 03월 22일<br>신체 : 174cm<br>혈액형 : O형</div></td>
+        </tr>
+        <tr>
+            <th><div id="div11" style="display:none;"><img src="./images/minhee.png" width="100px" height="100px"></div></th>
+            <td><div id="div12" style="display:none;">&lt민희&gt<br>출생 : 2002년 09월 17일<br>신체 : 183cm<br>혈액형 : AB형</div></td>
+        </tr>
+        <tr>
+            <th><div id="div13" style="display:none;"><img src="./images/hyeongjun.png" width="100px" height="100px"></div></th>
+            <td><div id="div14" style="display:none;">&lt형준&gt<br>출생 : 2002년 11월 30일<br>신체 : 175cm<br>혈액형 : A형</div></td>
+        </tr>
+        <tr>
+            <th><div id="div15" style="display:none;"><img src="./images/taeyoung.png" width="100px" height="100px"></div></th>
+            <td><div id="div16" style="display:none;">&lt태영&gt<br>출생 : 2003년 01월 27일<br>신체 : 178cm<br>혈액형 : AB형</div></td>
+        </tr>
+        <tr>
+            <th><div id="div17" style="display:none;"><img src="./images/seongmin.png" width="100px" height="100px"></div></th>
+            <td><div id="div18" style="display:none;">&lt성민&gt<br>출생 : 2003년 08월 01일<br>신체 : 170cm<br>혈액형 : O형</div></td>
+        </tr>
+    </table>
+</body>
+</html>

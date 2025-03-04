@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>STARSHIP</title>
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <style>
+@import url('https://fonts.googleapis.com/css2? family= Libre+Baskerville:wght@700 & display=swap');
+</style>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+    </style>
+        <script> 
+            // iOS와 안드로이드의 웹 브라우저를 구분합니다.
+            if (navigator.userAgent.toLowerCase().indexOf('iphone') >= 0
+                || navigator.userAgent.toLowerCase().indexOf('ipad') >= 0
+                || navigator.userAgent.toLowerCase().indexOf('ipod') >= 0
+                || navigator.userAgent.toLowerCase().indexOf('android') >= 0) {
+                alert('모바일 웹 브라우저입니다.');
+            } else {
+                alert('데스크톱 웹 브라우저입니다.');
+            }
+        </script>
+    <script>
+        window.onload = function(){
+            const header = document.querySelector('h2');
+            header.style.textAlign = 'center';
+            header.style.fontFamily = 'Libre Baskerville, serif';
+            header.style.fontSize = '50px';
+        }
+
+    </script>
+    <style>
+        h2>span{
+            text-shadow: 7px -7px 5px rgb(240, 91, 203);
+            color: white;
+        }
+        #logocolor{
+            text-shadow: 7px -7px 5px rgb(90, 43, 232);
+        }
+        h3{
+            text-align: center;
+        }
+        nav{
+            border: 0px solid #cccccc;
+            width: 95%;
+            height: 70px;
+            margin-top: 10px;
+        }
+        nav li{
+            display: inline;
+            margin: 20px;
+            font-family: 'Nanum Brush script';
+            font-size: 30px;
+            text-shadow: 4px 4px 5px rgb(62, 158, 231);
+            font-family: 'Dancing Script', cursive;
+        }   
+        ol>li{
+            display: inline;
+            padding-right: 5pt;
+            padding-left: 2pt;            
+        }
+        a:link{
+            text-decoration: none;
+            letter-spacing: 2pt;
+        }
+        a:hover{
+            font-weight: bold;
+            color:rgb(240, 91, 203);
+            
+            margin-left: 5pt;            
+        }
+        iframe{
+            background-color: rgb(208, 173, 237);
+        }
+        #page{
+            width: 1200px;
+            margin: auto;
+            border: 0px solid #cccccc;
+            background-color: rgb(0, 0, 0);
+        }
+    </style>
+    <style> 
+        #panel, #flip {
+          padding: 5px;
+          text-align: center;
+          background-color: #e5eecc;
+          border: solid 0px #c3c3c3;
+        }
+        #panel {
+          padding: 5px;
+          display: none;
+        }
+        div:hover{
+            box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+        }
+        /* .span:hover{
+            box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+        } */
+    </style>
+        <script>
+            function over(obj){
+                obj.style.boxShadow = '0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19)';
+            }
+            function out(obj){
+                obj.style.backgroundColor='violet';
+            }
+        </script>
+    <script src="jqueryslide.js"></script>
+</head>
+<body id="page">
+    
+   <h2><span>STARSHIP</span> <span id="logocolor">ENTERTAINMENT</span></h2>
+    <div id="flip"><span
+        onmouseover="over(this)"
+        onmouseout="out(this)">STARSHIP ARTISTS</span></div>
+    <div id="panel"> 
+    <nav>
+        <ol> 
+         <li><a href="groupsinger.html" target="ifr">그룹가수</a></li>
+         </ol> 
+     </nav>
+    </div>
+    <div>
+        <iframe src="target01.html" name="ifr" width=1200 height=1000 frameborder="0"></iframe>
+    </div>
+</body>
+</html>

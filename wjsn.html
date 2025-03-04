@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cute+Font&family=Dancing+Script:wght@700&display=swap');
+        </style>
+    <style>
+        .button {
+            background-color: #59b5e6; /* Green */
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            margin-left: 110px;
+            font-size: 16px;
+            cursor: pointer;
+            -webkit-transition-duration: 0.4s; /* Safari */
+            transition-duration: 0.4s;
+        }
+        .button2:hover {
+            box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+        }
+        td{
+            font-family: 'Cute Font', cursive;
+            font-size: 20px;
+        }
+        th:hover img{
+            box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+            width: 150px;
+            height: 150px;
+        }
+        nav{
+            border: 0px solid #cccccc;
+            width: 95%;
+            height: 70px;
+            margin-top: 10px;
+        }
+        nav li{
+            display: inline;
+            margin: 20px;
+            font-family: 'Nanum Brush script';
+            font-size: 30px;
+            text-shadow: 4px 4px 5px rgb(62, 158, 231);
+            font-family: 'Dancing Script', cursive;
+        }
+        ol>li{
+            display: inline;
+            padding-right: 5pt;
+            padding-left: 2pt;           
+        }
+        a:link{
+            text-decoration: none;
+        }
+        a{
+            color: white;
+        }
+    </style>
+    <script>
+        function buttonClick1(){
+            alert('프로필');
+        }
+        function buttonClick2(){
+            alert('앨범');
+        }
+    </script>
+    <script src="jqueryfade.js"></script>
+    <script src="jqueryanimate.js"></script>
+</head>
+<body>
+    <nav>
+    <ol> 
+        <li><button onclick="buttonClick1()" id="button1" class="button button2">우주소녀 프로필</button></li>
+        <li><button onclick="buttonClick2()" id="button2" class="button button2">우주소녀 앨범</button></li>
+        <li><a href="wjsnphoto.html" target="ifr"><button class="button button2">우주소녀 사진 & 무대</a></button></li>
+    </ol>
+    </nav>
+    <span id="span1" style="display:none;position:absolute;width:150px; height:150px;">
+        <table border="0">
+            <tr>
+                <th>MOMOMO(모모모)</th>
+                <th>비밀이야 (Secret)</th>
+            </tr>
+            <tr>
+                <th><img src="./images/wjsnmusic1.png" width="150px" height="150px"></th>
+                <th><img src="./images/wjsnmusic2.png" width="150px" height="150px"></th>
+            </tr>
+            <tr>
+                <th>너에게 닿기를</th>
+                <th>HAPPY</th>
+            </tr>
+            <tr>
+                <th><img src="./images/wjsnmusic3.png" width="150px" height="150px"></th>
+                <th><img src="./images/wjsnmusic4.png" width="150px" height="150px"></th>
+            </tr>
+            <tr>
+                <th>꿈꾸는 마음으로 (Dreams come True)</th>
+                <th>부탁해 (SAVE ME, SAVE YOU)</th>
+            </tr>
+            <tr>
+                <th><img src="./images/wjsnmusic5.png" width="150px" height="150px"></th>
+                <th><img src="./images/wjsnmusic6.png" width="150px" height="150px"></th>
+            </tr>
+            <tr>
+                <th>La La Love</th>
+                <th>Boogie Up</th>
+            </tr>
+            <tr>
+                <th><img src="./images/wjsnmusic7.png" width="150px" height="150px"></th>
+                <th><img src="./images/wjsnmusic8.png" width="150px" height="150px"></th>
+            </tr>
+            <tr>
+                <th>이루리</th>
+                <th>BUTTERFLY</th>
+            </tr>
+            <tr>
+                <th><img src="./images/wjsnmusic9.png" width="150px" height="150px"></th>
+                <th><img src="./images/wjsnmusic10.png" width="150px" height="150px"></th>
+            </tr>
+            <tr>
+                <th>UNNATURAL</th>
+                <th>Last Sequence</th>
+            </tr>
+            <tr>
+                <th><img src="./images/wjsnmusic11.png" width="150px" height="150px"></th>
+                <th><img src="./images/wjsnmusic12.png" width="150px" height="150px"></th>
+            </tr>
+        </table>
+    </span>
+    <table border="0">
+        <tr>
+            <th><div id="div1" style="display:none;"><img src="./images/exy.png" width="100px" height="100px"></div></th>
+            <td><div id="div2" style="display:none;">&lt엑시&gt<br>출생 : 1995년 11월 06일<br>신체 : 166cm<br>혈액형 : A형</div></td>
+        </tr>
+        <tr>
+            <th><div id="div3" style="display:none;"><img src="./images/seola.png" width="100px" height="100px"></div></th>
+            <td><div id="div4" style="display:none;">&lt설아&gt<br>출생 : 1994년 12월 24일<br>신체 : 165cm<br>혈액형 : A형</div></td>
+        </tr>
+        <tr>
+            <th><div id="div5" style="display:none;"><img src="./images/bona.png" width="100px" height="100px"></div></th>
+            <td><div id="div6" style="display:none;">&lt보나&gt<br>출생 : 1995년 08월 19일<br>신체 : 163cm<br>혈액형 : A형</div></td>
+        </tr>
+        <tr>
+            <th><div id="div7" style="display:none;"><img src="./images/subin.png" width="100px" height="100px"></div></th>
+            <td><div id="div8" style="display:none;">&lt수빈&gt<br>출생 : 1996년 09월 14일<br>신체 : 159cm<br>혈액형 : AB형</div></td>
+        </tr>
+        <tr>
+            <th><div id="div9" style="display:none;"><img src="./images/luda.png" width="100px" height="100px"></div></th>
+            <td><div id="div10" style="display:none;">&lt루다&gt<br>출생 : 1997년 03월 06일<br>신체 : 156cm<br>혈액형 : A형</div></td>
+        </tr>
+        <tr>
+            <th><div id="div11" style="display:none;"><img src="./images/dawan.png" width="100px" height="100px"></div></th>
+            <td><div id="div12" style="display:none;">&lt다원&gt<br>출생 : 1997년 04월 16일<br>신체 : 167cm<br>혈액형 : A형</div></td>
+        </tr>
+        <tr>
+            <th><div id="div13" style="display:none;"><img src="./images/eunseo.png" width="100px" height="100px"></div></th>
+            <td><div id="div14" style="display:none;">&lt은서&gt<br>출생 : 1998년 05월 27일<br>신체 : 168cm<br>혈액형 : B형</div></td>
+        </tr>
+        <tr>
+            <th><div id="div15" style="display:none;"><img src="./images/summer.png" width="100px" height="100px"></div></th>
+            <td><div id="div16" style="display:none;">&lt여름&gt<br>출생 : 1999년 01월 10일<br>신체 : 161cm<br>혈액형 : A형</div></td>
+        </tr>
+        <tr>
+            <th><div id="div17" style="display:none;"><img src="./images/dayoung.png" width="100px" height="100px"></div></th>
+            <td><div id="div18" style="display:none;">&lt다영&gt<br>출생 : 1999년 05월 14일<br>신체 : 161cm<br>혈액형 : A형</div></td>
+        </tr>
+        <tr>
+            <th><div id="div19" style="display:none;"><img src="./images/yeonjung.png" width="100px" height="100px"></div></th>
+            <td><div id="div20" style="display:none;">&lt연정&gt<br>출생 : 1999년 08월 03일<br>신체 : 166cm<br>혈액형 : A형</div></td>
+        </tr>
+    </table>
+</body>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cute+Font&family=Dancing+Script:wght@700&display=swap');
+        </style>
+    <style>
+        .button {
+            background-color: #59b5e6; /* Green */
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            margin-left: 100px;
+            font-size: 16px;
+            cursor: pointer;
+            -webkit-transition-duration: 0.4s; /* Safari */
+            transition-duration: 0.4s;
+        }
+        .button2:hover {
+            box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+        }
+        td{
+            font-family: 'Cute Font', cursive;
+            font-size: 20px;
+        }
+        th:hover img{
+            box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+            width: 150px;
+            height: 150px;
+        }
+        nav{
+            border: 0px solid #cccccc;
+            width: 95%;
+            height: 70px;
+            margin-top: 10px;
+        }
+        nav li{
+            display: inline;
+            margin: 20px;
+            font-family: 'Nanum Brush script';
+            font-size: 30px;
+            text-shadow: 4px 4px 5px rgb(62, 158, 231);
+            font-family: 'Dancing Script', cursive;
+        }
+        ol>li{
+            display: inline;
+            padding-right: 5pt;
+            padding-left: 2pt;           
+        }
+        a:link{
+            text-decoration: none;
+        }
+        a{
+            color: white;
+        }
+    </style>
+        <script>
+            function buttonClick1(){
+                alert('프로필');
+            }
+            function buttonClick2(){
+                alert('앨범');
+            }
+        </script>
+    <script src="jqueryfade.js"></script>
+    <script src="jqueryanimate.js"></script>
+</head>
+<body>
+    <nav>
+    <ol> 
+        <li><button onclick="buttonClick1()" id="button1" class="button button2">아이브 프로필</button></li>
+        <li><button onclick="buttonClick2()" id="button2" class="button button2">아이브 앨범</button></li>
+        <li><a href="ivepoto.html" target="ifr"><button class="button button2">아이브 사진 & 무대</a></button></li>
+    </ol>
+    </nav>
+    <span id="span1" style="display:none;position:absolute;width:150px; height:150px;">
+        <table border="0">
+            <tr>
+                <th>ELEVEN</th>
+                <th>LOVE DIVE</th>
+                <th>After LIKE</th>
+            </tr>
+            <tr>
+                <th><img src="./images/ivemusic1.png" width="150px" height="150px"></th>
+                <th><img src="./images/ivemusic2.png" width="150px" height="150px"></th>
+                <th><img src="./images/ivemusic3.png" width="150px" height="150px"></th>
+            </tr>
+        </table>
+    </span>
+    <table border="0">
+        <tr>
+            <th><div id="div1" style="display:none;"><img src="./images/yujin.png" width="100px" height="100px"></div></th>
+            <td><div id="div2" style="display:none;">&lt안유진&gt<br>출생 : 2003년 09월 01일<br>신체 : 172cm<br>혈액형 : A형</div></td>
+        </tr>
+        <tr>
+            <th><div id="div3" style="display:none;"><img src="./images/gaeul.png" width="100px" height="100px"></div></th>
+            <td><div id="div4" style="display:none;">&lt가을&gt<br>출생 : 2002년 09월 24일<br>신체 : 164cm<br>혈액형 : B형</div></td>
+        </tr>
+        <tr>
+            <th><div id="div5" style="display:none;"><img src="./images/rei.png" width="100px" height="100px"></div></th>
+            <td><div id="div6" style="display:none;">&lt레이&gt<br>출생 : 2004년 02월 03일<br>신체 : 169cm<br>혈액형 : A형</div></td>
+        </tr>
+        <tr>
+            <th><div id="div7" style="display:none;"><img src="./images/wonyoung.png" width="100px" height="100px"></div></th>
+            <td><div id="div8" style="display:none;">&lt장원영&gt<br>출생 : 2004년 08월 31일<br>신체 : 173cm<br>혈액형 :O형</div></td>
+        </tr>
+        <tr>
+            <th><div id="div9" style="display:none;"><img src="./images/liz.png" width="100px" height="100px"></div></th>
+            <td><div id="div10" style="display:none;">&lt리즈&gt<br>출생 : 2004년 11월 21일<br>신체 : 170cm<br>혈액형 : AB형</div></td>
+        </tr>
+        <tr>
+            <th><div id="div11" style="display:none;"><img src="./images/leeseo.png" width="100px" height="100px"></div></th>
+            <td><div id="div12" style="display:none;">&lt이서&gt<br>출생 : 2007년 02월 21일<br>신체 : 166cm<br>혈액형 : O형</div></td>
+        </tr>
+    </table>
+</body>
+</html>

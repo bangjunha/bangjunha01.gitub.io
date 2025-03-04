@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <style>
+        h1 {
+            color: rgb(65, 161, 230);
+            text-align: center;
+            margin-left: -50px;
+        }
+        section{
+            float: left;
+            border: 0px solid #cccccc;
+            margin-top: 10px;
+            margin-left: 120px;
+        }
+        table{
+            margin-left: 170px;
+        }
+        tr{
+            margin: 10%;
+        }
+        td{
+            opacity: 0.5;
+        }
+        td:hover{
+            opacity: 1.0;
+        } 
+        td:hover img{
+            box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+            width: 310px;
+            height: 310px;
+        }
+        button {
+            background-color: #e659b2; /* Green */
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            margin-left: 900px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 50%;
+            -webkit-transition-duration: 0.4s; /* Safari */
+            transition-duration: 0.4s;
+        }
+        .button2:hover {
+            box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+        }
+        a:link{
+            text-decoration: none;
+        }
+        a{
+            color: white;
+        }
+    </style>
+        <script>
+            function innerchange(){
+                const header = document.getElementById('header');
+                const original = header.innerHTML;
+                header.innerHTML = 'Star Ship<br>';
+                header.innerHTML += '원래는 ' + original + '였답니다!';
+            }
+        </script>
+</head>
+<body>
+    <section>
+        <button class="button button2"><a href="target01.html">돌아가기</a></button>
+            <h1 id="header" onclick="innerchange()">스타쉽 그룹가수</h1>
+            
+            <table border="0">
+                <tr>
+                    <th>&nbsp;</th>
+                    <th>&nbsp;</th>
+                </tr>
+                <tr>
+                    <th>우주소녀</th>
+                    <th>&nbsp;</th>
+                    <th>몬스타엑스</th>
+                </tr>
+                <tr>
+                    <td><span><a href="wjsn.html"><img src="./images/wjsn.png" width="300px" height="300px"></a></span></td>
+                    <th>&nbsp;</th>
+                    <td><a href="monstarx.html"><img src="./images/monstarx.png" width="300px" height="300px"></a></td>
+                </tr>
+                <tr>
+                    <th>&nbsp;</th>
+                    <th>&nbsp;</th>
+                </tr>
+                <tr>
+                    <th>크래비티</th>
+                    <th>&nbsp;</th>
+                    <th>아이브</th>
+                </tr>
+                <tr>
+                    <td><a href="cravity.html"><img src="./images/cravity.png" width="300px" height="300"></a></td>
+                    <th>&nbsp;</th>
+                    <td><a href="ive.html"><img src="./images/ive.png" width="300px" height="300"></a></td>
+                </tr>
+            </table>
+        </section>
+</body>
+
+</html>

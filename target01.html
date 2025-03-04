@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script>
+        window.onload = function(){
+            const header = document.getElementById("header");
+            header.innerHTML='STAR SHIP';
+            header.style.textAlign='center';
+            header.style.textShadow='7px -7px 5px rgb(65, 255, 255)';
+
+            const bodys = document.querySelectorAll('th');
+            for (let i = 0; i < bodys.length; i++) {
+                const body = bodys[i];
+                if (i%2==0) {
+                 body.style.color='white';
+                 body.style.textShadow= '3px -3px 1px rgb(240, 91, 203)';
+                }
+            }
+        }
+    </script>
+    <script>
+        $(document).ready(function(){
+            $('img').mouseenter(function(){
+                $('img').animate({
+                width: "100%"
+                });
+            });
+            $('.button').click(function(){
+                $('div').toggle();
+            });
+            $('table').click(function(){
+                $('table').animate({
+                    marginLeft: '350px',
+                    height: '+500px',
+                    width: '+500px'
+                });
+            });
+        });
+    </script>
+    <style>
+        table{
+            border-color: black;
+            background-color: rgb(202, 240, 126);
+            border-radius: 5%;
+        }
+    </style>
+
+</head>
+<body>
+    <h1 id="header" class="button">스타쉽</h1>
+    <img src="./images/starship.png" width="50px" height="50px">
+    <div>
+        <table border="1">
+            <tr>
+                <th>정식명칭</th>
+                <th>(주)스타쉽 엔터테인먼트</th>
+            </tr>
+            <tr>
+                <th>영문 명칭</th>
+                <th>Starship Entertainment</th>
+            </tr>
+            <tr>
+                <th>국가</th>
+                <th> 대한민국</th>
+            </tr>
+            <tr>
+                <th>설립일</th>
+                <th>2008년 1월 3일</th>
+            </tr>
+            <tr>
+                <th>설립자</th>
+                <th>서현주</th>
+            </tr>
+            <tr>
+                <th>대표</th>
+                <th> 이진성, 이훈희</th>
+            </tr>
+            <tr>
+                <th>주요 주주</th>
+                <th>카카오엔터테인먼트 (59.73%)<br>
+                    서현주 (19.46%)<br>
+                    김영욱 (4.60%)</th>
+            </tr>
+            <tr>
+                <th>모기업</th>
+                <th>kokao (2013년 12월 ~ 현재)</th>
+            </tr>
+            <tr>
+                <th>주소</th>
+                <th>서울특별시 강남구 삼성로 146길 4-5 (청담동)</th>
+            </tr>
+            <tr>
+                <th>배우</th>
+                <th>김범
+                    김샤나
+                    김승화
+                    류혜영
+                    박주비
+                    손우현<br>
+                    송승헌
+                    송지연
+                    송하윤
+                    신승호
+                    신현수
+                    안소요
+                    오소현</th>
+            </tr>
+            <tr>
+                <th>배우</th>
+                <th>오혜원
+                    우현진
+                    유연석
+                    이광수
+                    이다연
+                    이동욱
+                    이승헌
+                    이미연<br>
+                    이진
+                    전소민
+                    정원창
+                    조윤희
+                    채수빈
+                    천영민
+                    최원명
+                    최희진
+                    한민</th>
+            </tr>
+            <tr>
+                <th>아티스트</th>
+                <th>케이윌
+                    양재진
+                    몬스타엑스
+                    우주소녀
+                    브라더수
+                    정세운
+                    CRAVITY
+                    IVE</th>
+            </tr>
+        </table>
+    </div>
+
+</body>
+</html>
